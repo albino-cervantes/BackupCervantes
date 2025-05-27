@@ -1,0 +1,27 @@
+{
+  "ListaDeParamentos": [
+    {
+      "Servidor": "asdasd",
+      "Porta": "asdasd",
+      "UsuarioBancoDados": "asda",
+      "SenhaUsuario": "asdasd",
+      "ListaTabelasIgnoradas": null,
+      "NomebancoBancoDados": "asdasd",
+      "NomeArquivoDeBackup": null,
+      "CaminhoPgDump": "asdasd",
+      "CaminhoPastaSalvarBackup": "asdasd",
+      "Id": "dab96cbe-8e9c-4eaa-9b64-aeb8b9394496",
+      "Agendamentos": [],
+      "Destinos": [
+        {
+          "Id": "d69367ed-29de-454c-9ea6-4d4d0c26c2f0",
+          "Tipo": 1,
+          "Ftp": null,
+          "GoogleDrive": null,
+          "S3": null,
+          "OneDrive": null
+        }
+      ]
+    }
+  ]
+}
