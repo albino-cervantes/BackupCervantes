@@ -22,6 +22,8 @@ namespace BackupAutomaticoCervantes
         {
             InitializeComponent();
 
+            bdsHorarioAgendamento.DataSource = new HorarioAgendamentoModel();
+
             dtpHora.Format = DateTimePickerFormat.Time;
             dtpHora.ShowUpDown = true;
 
@@ -39,8 +41,16 @@ namespace BackupAutomaticoCervantes
 
         public override void btnInAlt_Click(object sender, EventArgs e)
         {
-            if (Resultado != null)
-                base.btnInAlt_Click(Resultado, e);
+
+            foreach (var item in chkDias.CheckedItems)
+            {
+                ((HorarioAgendamentoModel)bdsHorarioAgendamento.Current).DiasDaSemana.Add((DiasDaSemana)Enum.Parse(typeof(DiasDaSemana), item.ToString()));
+            }
+
+            if (bdsHorarioAgendamento.Current != null)
+                base.btnInAlt_Click((HorarioAgendamentoModel)bdsHorarioAgendamento.Current, e);
+
+            this.Close();
         }
 
         private void chkTodosOsDias_CheckedChanged(object sender, EventArgs e)

@@ -55,18 +55,29 @@
             this.ofdCaminhoPgDump = new System.Windows.Forms.OpenFileDialog();
             this.groupBoxDefault1 = new RognusFramework.Componentes.GroupBoxDefault();
             this.dtgAgendamentos = new RognusFramework.Componentes.DataGridViewChange();
-            this.userControlInAltDel1 = new RognusFramework.Componentes.UserControlInAltDel();
+            this.bdsAgendamento = new RognusFramework.Componentes.BindingSourceDefault(this.components);
+            this.us = new RognusFramework.Componentes.UserControlInAltDel();
             this.groupBoxDefault2 = new RognusFramework.Componentes.GroupBoxDefault();
             this.dtgLocaisDeDestino = new RognusFramework.Componentes.DataGridViewChange();
+            this.tipoDataGridViewTextBoxColumn = new RognusFramework.Componentes.DataGridViewTextBoxColumnDefault();
+            this.bdsLocaisDestino = new RognusFramework.Componentes.BindingSourceDefault(this.components);
             this.groupBoxDefault3 = new RognusFramework.Componentes.GroupBoxDefault();
+            this.btnCarregarListaTabelas = new RognusFramework.Componentes.ButtonDefault();
+            this.tvListaTabelas = new BackupAutomaticoCervantes.Padrao.TreeviewListaTabelasBancoDadosPostgres();
             this.userControlInAltDel2 = new RognusFramework.Componentes.UserControlInAltDel();
+            this.frmListaBackups1 = new BackupAutomaticoCervantes.FrmListaBackups();
+            this.Hora = new RognusFramework.Componentes.DataGridViewTextBoxColumnDefault();
+            this.DiasDaSemanaDisplay = new RognusFramework.Componentes.DataGridViewTextBoxColumnDefault();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderDefault)).BeginInit();
             this.gbxPropriedadesConexao.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bdsParametros)).BeginInit();
             this.groupBoxDefault1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgAgendamentos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdsAgendamento)).BeginInit();
             this.groupBoxDefault2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgLocaisDeDestino)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdsLocaisDestino)).BeginInit();
+            this.groupBoxDefault3.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlDefault
@@ -359,7 +370,9 @@
             // 
             this.dtgAgendamentos.AllowUserToAddRows = false;
             this.dtgAgendamentos.AllowUserToAlterStructOnReadOnly_User = false;
+            this.dtgAgendamentos.AllowUserToDeleteRows = false;
             this.dtgAgendamentos.AllowUserToResizeRows = false;
+            this.dtgAgendamentos.AutoGenerateColumns = false;
             this.dtgAgendamentos.AutoState_User = true;
             this.dtgAgendamentos.BackColorEdit_User = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(236)))), ((int)(((byte)(221)))));
             this.dtgAgendamentos.BackgroundColor = System.Drawing.Color.AliceBlue;
@@ -374,8 +387,12 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgAgendamentos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgAgendamentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgAgendamentos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Hora,
+            this.DiasDaSemanaDisplay});
             this.dtgAgendamentos.CurrentBackColorEdit_User = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(213)))), ((int)(((byte)(179)))));
             this.dtgAgendamentos.CurrentBackColorNotEdit_User = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(240)))));
+            this.dtgAgendamentos.DataSource = this.bdsAgendamento;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -384,7 +401,6 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgAgendamentos.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgAgendamentos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgAgendamentos.EnabledAnteriorBusca = false;
             this.dtgAgendamentos.Location = new System.Drawing.Point(3, 16);
             this.dtgAgendamentos.Name = "dtgAgendamentos";
@@ -402,16 +418,22 @@
             this.dtgAgendamentos.UpdateItem_User += new System.EventHandler(this.dtgAgendamentos_UpdateItem_User);
             this.dtgAgendamentos.RowRemoving_User += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.dtgAgendamentos_RowRemoving_User);
             // 
-            // userControlInAltDel1
+            // bdsAgendamento
             // 
-            this.userControlInAltDel1.AutoState_User = true;
-            this.userControlInAltDel1.BackColor = System.Drawing.Color.Transparent;
-            this.userControlInAltDel1.EnabledAnteriorBusca = false;
-            this.userControlInAltDel1.Location = new System.Drawing.Point(327, 407);
-            this.userControlInAltDel1.Name = "userControlInAltDel1";
-            this.userControlInAltDel1.Owner_User = this.dtgAgendamentos;
-            this.userControlInAltDel1.Size = new System.Drawing.Size(86, 24);
-            this.userControlInAltDel1.TabIndex = 19;
+            this.bdsAgendamento.DataMember = "Agendamentos";
+            this.bdsAgendamento.DataSource = this.bdsParametros;
+            this.bdsAgendamento.SupportsSorting_User = true;
+            // 
+            // us
+            // 
+            this.us.AutoState_User = true;
+            this.us.BackColor = System.Drawing.Color.Transparent;
+            this.us.EnabledAnteriorBusca = false;
+            this.us.Location = new System.Drawing.Point(327, 407);
+            this.us.Name = "us";
+            this.us.Owner_User = this.dtgAgendamentos;
+            this.us.Size = new System.Drawing.Size(86, 24);
+            this.us.TabIndex = 19;
             // 
             // groupBoxDefault2
             // 
@@ -423,13 +445,14 @@
             this.groupBoxDefault2.Size = new System.Drawing.Size(329, 178);
             this.groupBoxDefault2.TabIndex = 20;
             this.groupBoxDefault2.TabStop = false;
-            this.groupBoxDefault2.Text = "Locais de Destino ";
+            this.groupBoxDefault2.Text = "Backup na Nuvem";
             // 
             // dtgLocaisDeDestino
             // 
             this.dtgLocaisDeDestino.AllowUserToAddRows = false;
             this.dtgLocaisDeDestino.AllowUserToAlterStructOnReadOnly_User = false;
             this.dtgLocaisDeDestino.AllowUserToResizeRows = false;
+            this.dtgLocaisDeDestino.AutoGenerateColumns = false;
             this.dtgLocaisDeDestino.AutoState_User = true;
             this.dtgLocaisDeDestino.BackColorEdit_User = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(236)))), ((int)(((byte)(221)))));
             this.dtgLocaisDeDestino.BackgroundColor = System.Drawing.Color.AliceBlue;
@@ -444,8 +467,11 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgLocaisDeDestino.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgLocaisDeDestino.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgLocaisDeDestino.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.tipoDataGridViewTextBoxColumn});
             this.dtgLocaisDeDestino.CurrentBackColorEdit_User = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(213)))), ((int)(((byte)(179)))));
             this.dtgLocaisDeDestino.CurrentBackColorNotEdit_User = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(240)))));
+            this.dtgLocaisDeDestino.DataSource = this.bdsLocaisDestino;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -472,9 +498,27 @@
             this.dtgLocaisDeDestino.UpdateItem_User += new System.EventHandler(this.dtgLocaisDeDestino_UpdateItem_User);
             this.dtgLocaisDeDestino.RowRemoving_User += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.dtgLocaisDeDestino_RowRemoving_User);
             // 
+            // tipoDataGridViewTextBoxColumn
+            // 
+            this.tipoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.tipoDataGridViewTextBoxColumn.DataPropertyName = "Tipo";
+            this.tipoDataGridViewTextBoxColumn.ExportarParaExcel = true;
+            this.tipoDataGridViewTextBoxColumn.HeaderText = "Tipo";
+            this.tipoDataGridViewTextBoxColumn.Name = "tipoDataGridViewTextBoxColumn";
+            this.tipoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.tipoDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // bdsLocaisDestino
+            // 
+            this.bdsLocaisDestino.DataMember = "Destinos";
+            this.bdsLocaisDestino.DataSource = this.bdsParametros;
+            this.bdsLocaisDestino.SupportsSorting_User = true;
+            // 
             // groupBoxDefault3
             // 
             this.groupBoxDefault3.AutoState_User = true;
+            this.groupBoxDefault3.Controls.Add(this.btnCarregarListaTabelas);
+            this.groupBoxDefault3.Controls.Add(this.tvListaTabelas);
             this.groupBoxDefault3.EnabledAnteriorBusca = false;
             this.groupBoxDefault3.Location = new System.Drawing.Point(422, 12);
             this.groupBoxDefault3.Name = "groupBoxDefault3";
@@ -482,6 +526,29 @@
             this.groupBoxDefault3.TabIndex = 22;
             this.groupBoxDefault3.TabStop = false;
             this.groupBoxDefault3.Text = "Tabelas Excluidas do Backup";
+            // 
+            // btnCarregarListaTabelas
+            // 
+            this.btnCarregarListaTabelas.AutoState_User = true;
+            this.btnCarregarListaTabelas.EnabledAnteriorBusca = false;
+            this.btnCarregarListaTabelas.Location = new System.Drawing.Point(6, 175);
+            this.btnCarregarListaTabelas.Name = "btnCarregarListaTabelas";
+            this.btnCarregarListaTabelas.Size = new System.Drawing.Size(311, 23);
+            this.btnCarregarListaTabelas.TabIndex = 1;
+            this.btnCarregarListaTabelas.Text = "Carregar Lista";
+            this.btnCarregarListaTabelas.UseVisualStyleBackColor = true;
+            this.btnCarregarListaTabelas.Click += new System.EventHandler(this.btnCarregarListaTabelas_Click);
+            // 
+            // tvListaTabelas
+            // 
+            this.tvListaTabelas.AutoState_User = true;
+            this.tvListaTabelas.BackColor = System.Drawing.SystemColors.Control;
+            this.tvListaTabelas.ConnectionString = "Host=localhost;Database=postgres;Username=postgres;Password=senha;Port=5432";
+            this.tvListaTabelas.EnabledAnteriorBusca = false;
+            this.tvListaTabelas.Location = new System.Drawing.Point(6, 19);
+            this.tvListaTabelas.Name = "tvListaTabelas";
+            this.tvListaTabelas.Size = new System.Drawing.Size(311, 153);
+            this.tvListaTabelas.TabIndex = 0;
             // 
             // userControlInAltDel2
             // 
@@ -494,6 +561,44 @@
             this.userControlInAltDel2.Size = new System.Drawing.Size(86, 24);
             this.userControlInAltDel2.TabIndex = 23;
             // 
+            // frmListaBackups1
+            // 
+            this.frmListaBackups1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(209)))), ((int)(((byte)(234)))));
+            this.frmListaBackups1.BackColor_User = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(209)))), ((int)(((byte)(234)))));
+            this.frmListaBackups1.ClientSize = new System.Drawing.Size(387, 363);
+            this.frmListaBackups1.FrmModeloBusca = this.frmListaBackups1;
+            this.frmListaBackups1.FrmOwner = this;
+            this.frmListaBackups1.HelpKeyword_User = null;
+            this.frmListaBackups1.KeyPreview = true;
+            this.frmListaBackups1.Location = new System.Drawing.Point(2678, 307);
+            this.frmListaBackups1.MinimizeBox = false;
+            this.frmListaBackups1.MinimumSize = new System.Drawing.Size(155, 39);
+            this.frmListaBackups1.Name = "frmListaBackups1";
+            this.frmListaBackups1.ShowIcon = false;
+            this.frmListaBackups1.ShowInTaskbar = false;
+            this.frmListaBackups1.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.frmListaBackups1.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.frmListaBackups1.Text = "Busca Parametros ";
+            this.frmListaBackups1.Visible = false;
+            this.frmListaBackups1.btnInAltClick_user += new System.EventHandler(this.frmListaBackups1_btnInAltClick_user);
+            // 
+            // Hora
+            // 
+            this.Hora.DataPropertyName = "Hora";
+            this.Hora.ExportarParaExcel = true;
+            this.Hora.HeaderText = "Hora";
+            this.Hora.Name = "Hora";
+            this.Hora.ReadOnly = true;
+            // 
+            // DiasDaSemanaDisplay
+            // 
+            this.DiasDaSemanaDisplay.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.DiasDaSemanaDisplay.DataPropertyName = "DiasDaSemanaDisplay";
+            this.DiasDaSemanaDisplay.ExportarParaExcel = true;
+            this.DiasDaSemanaDisplay.HeaderText = "DiasDaSemanaDisplay";
+            this.DiasDaSemanaDisplay.Name = "DiasDaSemanaDisplay";
+            this.DiasDaSemanaDisplay.ReadOnly = true;
+            // 
             // FrmConfigBackup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -502,9 +607,10 @@
             this.Controls.Add(this.userControlInAltDel2);
             this.Controls.Add(this.groupBoxDefault3);
             this.Controls.Add(this.groupBoxDefault2);
-            this.Controls.Add(this.userControlInAltDel1);
+            this.Controls.Add(this.us);
             this.Controls.Add(this.groupBoxDefault1);
             this.Controls.Add(this.gbxPropriedadesConexao);
+            this.FrmModeloBusca = this.frmListaBackups1;
             this.MinimumSize = new System.Drawing.Size(439, 295);
             this.Name = "FrmConfigBackup";
             this.ShowInTaskbar = true;
@@ -512,7 +618,7 @@
             this.Controls.SetChildIndex(this.pnlDefault, 0);
             this.Controls.SetChildIndex(this.gbxPropriedadesConexao, 0);
             this.Controls.SetChildIndex(this.groupBoxDefault1, 0);
-            this.Controls.SetChildIndex(this.userControlInAltDel1, 0);
+            this.Controls.SetChildIndex(this.us, 0);
             this.Controls.SetChildIndex(this.groupBoxDefault2, 0);
             this.Controls.SetChildIndex(this.groupBoxDefault3, 0);
             this.Controls.SetChildIndex(this.userControlInAltDel2, 0);
@@ -522,8 +628,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.bdsParametros)).EndInit();
             this.groupBoxDefault1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgAgendamentos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdsAgendamento)).EndInit();
             this.groupBoxDefault2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgLocaisDeDestino)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdsLocaisDestino)).EndInit();
+            this.groupBoxDefault3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -552,10 +661,18 @@
         private RognusFramework.Componentes.BindingSourceDefault bdsParametros;
         private RognusFramework.Componentes.GroupBoxDefault groupBoxDefault1;
         private RognusFramework.Componentes.DataGridViewChange dtgAgendamentos;
-        private RognusFramework.Componentes.UserControlInAltDel userControlInAltDel1;
+        private RognusFramework.Componentes.UserControlInAltDel us;
         private RognusFramework.Componentes.GroupBoxDefault groupBoxDefault2;
         private RognusFramework.Componentes.DataGridViewChange dtgLocaisDeDestino;
         private RognusFramework.Componentes.GroupBoxDefault groupBoxDefault3;
         private RognusFramework.Componentes.UserControlInAltDel userControlInAltDel2;
+        private Padrao.TreeviewListaTabelasBancoDadosPostgres tvListaTabelas;
+        private RognusFramework.Componentes.BindingSourceDefault bdsAgendamento;
+        private RognusFramework.Componentes.DataGridViewTextBoxColumnDefault tipoDataGridViewTextBoxColumn;
+        private RognusFramework.Componentes.BindingSourceDefault bdsLocaisDestino;
+        private FrmListaBackups frmListaBackups1;
+        private RognusFramework.Componentes.ButtonDefault btnCarregarListaTabelas;
+        private RognusFramework.Componentes.DataGridViewTextBoxColumnDefault Hora;
+        private RognusFramework.Componentes.DataGridViewTextBoxColumnDefault DiasDaSemanaDisplay;
     }
 }

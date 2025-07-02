@@ -28,13 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBoxDefault1 = new RognusFramework.Componentes.GroupBoxDefault();
             this.chkDias = new System.Windows.Forms.CheckedListBox();
             this.chkTodosOsDias = new RognusFramework.Componentes.CheckBoxDefault();
             this.labelDefault1 = new RognusFramework.Componentes.LabelDefault();
             this.dtpHora = new RognusFramework.Componentes.DateTimePickerDefault();
+            this.horarioAgendamentoModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bdsHorarioAgendamento = new RognusFramework.Componentes.BindingSourceDefault(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderDefault)).BeginInit();
             this.groupBoxDefault1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.horarioAgendamentoModelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdsHorarioAgendamento)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlDefault
@@ -69,6 +74,7 @@
             this.chkTodosOsDias.AutoSize = true;
             this.chkTodosOsDias.AutoState_User = true;
             this.chkTodosOsDias.BackColor = System.Drawing.Color.Transparent;
+            this.chkTodosOsDias.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.bdsHorarioAgendamento, "ExecutarTodosOsDias", true));
             this.chkTodosOsDias.EnabledAnteriorBusca = false;
             this.chkTodosOsDias.Location = new System.Drawing.Point(6, 19);
             this.chkTodosOsDias.Name = "chkTodosOsDias";
@@ -93,6 +99,7 @@
             // dtpHora
             // 
             this.dtpHora.AutoState_User = true;
+            this.dtpHora.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdsHorarioAgendamento, "Hora", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "t"));
             this.dtpHora.EnabledAnteriorBusca = false;
             this.dtpHora.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpHora.Location = new System.Drawing.Point(45, 187);
@@ -100,6 +107,15 @@
             this.dtpHora.Size = new System.Drawing.Size(80, 20);
             this.dtpHora.TabIndex = 0;
             this.dtpHora.Value = new System.DateTime(2025, 4, 29, 16, 19, 43, 510);
+            // 
+            // horarioAgendamentoModelBindingSource
+            // 
+            this.horarioAgendamentoModelBindingSource.DataSource = typeof(BackupAutomaticoCervantes.Models.HorarioAgendamentoModel);
+            // 
+            // bdsHorarioAgendamento
+            // 
+            this.bdsHorarioAgendamento.DataSource = typeof(BackupAutomaticoCervantes.Models.HorarioAgendamentoModel);
+            this.bdsHorarioAgendamento.SupportsSorting_User = true;
             // 
             // FrmAgendamento
             // 
@@ -119,6 +135,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderDefault)).EndInit();
             this.groupBoxDefault1.ResumeLayout(false);
             this.groupBoxDefault1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.horarioAgendamentoModelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdsHorarioAgendamento)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -130,5 +148,7 @@
         private RognusFramework.Componentes.CheckBoxDefault chkTodosOsDias;
         private RognusFramework.Componentes.LabelDefault labelDefault1;
         private System.Windows.Forms.CheckedListBox chkDias;
+        private RognusFramework.Componentes.BindingSourceDefault bdsHorarioAgendamento;
+        private System.Windows.Forms.BindingSource horarioAgendamentoModelBindingSource;
     }
 }

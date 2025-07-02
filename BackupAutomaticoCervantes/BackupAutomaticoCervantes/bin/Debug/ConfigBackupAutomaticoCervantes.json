@@ -1,20 +1,43 @@
 {
   "ListaDeParamentos": [
     {
-      "Servidor": "asdasd",
-      "Porta": "asdasd",
-      "UsuarioBancoDados": "asda",
-      "SenhaUsuario": "asdasd",
-      "ListaTabelasIgnoradas": null,
-      "NomebancoBancoDados": "asdasd",
+      "Servidor": "127.0.0.1",
+      "Porta": "5432",
+      "UsuarioBancoDados": "postgres",
+      "SenhaUsuario": "cer_2011!",
+      "ListaTabelasIgnoradas": [
+        "audit.logged_actions"
+      ],
+      "NomebancoBancoDados": "InkDB_1371453627465470124",
       "NomeArquivoDeBackup": null,
-      "CaminhoPgDump": "asdasd",
-      "CaminhoPastaSalvarBackup": "asdasd",
-      "Id": "dab96cbe-8e9c-4eaa-9b64-aeb8b9394496",
-      "Agendamentos": [],
+      "CaminhoPgDump": "C:\\postgreSQL\\9.5\\bin\\pg_dump.exe",
+      "CaminhoPastaSalvarBackup": "C:\\Cervantes",
+      "Id": "12e007e8-427f-46be-abfc-3c729b5c4990",
+      "Agendamentos": [
+        {
+          "Id": "13f4cea9-1d14-49fe-905b-1e6fb02fb0ad",
+          "Hora": "01:00:00",
+          "DiasDaSemana": [],
+          "ExecutarTodosOsDias": true,
+          "DiasDaSemanaDisplay": "Todos os dias às 01:00"
+        },
+        {
+          "Id": "f7f9c7ff-7fd6-4ee8-a802-cd5511c15da6",
+          "Hora": "13:30:00",
+          "DiasDaSemana": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "ExecutarTodosOsDias": false,
+          "DiasDaSemanaDisplay": "Segunda, Terça, Quarta, Quinta, Sexta às 13:30"
+        }
+      ],
       "Destinos": [
         {
-          "Id": "d69367ed-29de-454c-9ea6-4d4d0c26c2f0",
+          "Id": "b8f86de5-567d-4200-8e0e-c3a89d622bf2",
           "Tipo": 1,
           "Ftp": null,
           "GoogleDrive": null,
@@ -22,6 +45,47 @@
           "OneDrive": null
         }
       ]
+    },
+    {
+      "Servidor": "10.0.0.40",
+      "Porta": "5432",
+      "UsuarioBancoDados": "postgres",
+      "SenhaUsuario": "cer_2011!",
+      "ListaTabelasIgnoradas": [
+        "audit.logged_actions",
+        "public.erros_logs"
+      ],
+      "NomebancoBancoDados": "InkDB",
+      "NomeArquivoDeBackup": null,
+      "CaminhoPgDump": "C:\\postgreSQL\\9.5\\bin\\pg_dump.exe",
+      "CaminhoPastaSalvarBackup": "C:\\Cervantes\\Pit",
+      "Id": "eabe24ae-d99e-4077-83f6-94f8e402ac81",
+      "Agendamentos": [
+        {
+          "Id": "38fcf0dc-072d-4bce-89e5-1e5f905f4539",
+          "Hora": "10:00:00",
+          "DiasDaSemana": [
+            3
+          ],
+          "ExecutarTodosOsDias": false,
+          "DiasDaSemanaDisplay": "Quarta às 10:00"
+        }
+      ],
+      "Destinos": []
+    },
+    {
+      "Servidor": "1.0.0.1",
+      "Porta": "34234234",
+      "UsuarioBancoDados": "postgres",
+      "SenhaUsuario": "cerjhasdf",
+      "ListaTabelasIgnoradas": null,
+      "NomebancoBancoDados": "InkDVB",
+      "NomeArquivoDeBackup": null,
+      "CaminhoPgDump": "C:\\postgreSQL\\9.5\\bin\\pg_dump.exe",
+      "CaminhoPastaSalvarBackup": "C:\\Users\\Robson\\Desktop",
+      "Id": "d728a55b-b4ff-4e09-9bfc-49246d9b97f7",
+      "Agendamentos": [],
+      "Destinos": []
     }
   ]
 }

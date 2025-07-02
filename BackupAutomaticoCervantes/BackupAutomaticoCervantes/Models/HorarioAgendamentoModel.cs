@@ -20,6 +20,14 @@ namespace BackupAutomaticoCervantes.Models
         /// <summary>Se verdadeiro, ignora os dias da semana e executa todos os dias</summary>
         public bool ExecutarTodosOsDias { get; set; } = false;
 
+        public string DiasDaSemanaDisplay
+        {
+            get
+            {
+               return ToString();
+            }
+        }
+
         public override string ToString()
         {
             string dias = ExecutarTodosOsDias ? "Todos os dias" : string.Join(", ", DiasDaSemana);

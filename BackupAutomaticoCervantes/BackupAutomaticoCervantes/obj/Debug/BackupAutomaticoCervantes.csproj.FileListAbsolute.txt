@@ -10,7 +10,6 @@ C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\Backu
 C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\Microsoft.ReportViewer.WinForms.dll
 C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\zxing.dll
 C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\ExcelLibrary.dll
-C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\Mono.Security.dll
 C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\System.Memory.dll
 C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
@@ -33,12 +32,6 @@ C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\Backu
 C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\System.Buffers.xml
 C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\System.Text.Encoding.CodePages.xml
-C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\de\Npgsql.resources.dll
-C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\es\Npgsql.resources.dll
-C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\fi\Npgsql.resources.dll
-C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\fr\Npgsql.resources.dll
-C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\ja\Npgsql.resources.dll
-C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\zh-CN\Npgsql.resources.dll
 C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\obj\Debug\BackupAutomaticoCervantes.csproj.AssemblyReference.cache
 C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\obj\Debug\BackupAutomaticoCervantes.FrmConfigBackup.resources
 C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\obj\Debug\BackupAutomaticoCervantes.Properties.Resources.resources
@@ -133,3 +126,12 @@ C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\Backu
 C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\System.ValueTuple.xml
 C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\Padrao\ConfigAutenticacaoGoogleDrive.json
+C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\System.Threading.Channels.dll
+C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\System.Threading.Channels.xml
+C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\obj\Debug\BackupAutomaticoCervantes.Padrao.TreeviewListaTabelasBancoDadosPostgres.resources
