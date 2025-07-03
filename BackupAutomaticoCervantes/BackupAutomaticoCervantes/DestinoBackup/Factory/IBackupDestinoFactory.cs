@@ -17,6 +17,6 @@ namespace BackupAutomaticoCervantes.DestinoBackup.Factory
         /// </summary>
         /// <param name="configuracao">Configuração do destino</param>
         /// <returns>Instância do destino de backup</returns>
-        IBackupDestino CriarDestino(DestinoConfig configuracao);
+        IBackupDestino CriarDestino(IDestinoConfig config);
     }
 }

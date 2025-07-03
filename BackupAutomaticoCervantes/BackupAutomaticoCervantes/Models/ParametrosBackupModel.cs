@@ -23,7 +23,7 @@ namespace BackupAutomaticoCervantes
         private string _caminhoPastaSalvarBackup;
         private string _caminhoPgDump;
         private List<HorarioAgendamentoModel> _agendamentos = new List<HorarioAgendamentoModel>();
-        private List<DestinoConfig> _destinos = new List<DestinoConfig>();
+        private List<IDestinoConfig> _destinos = new List<IDestinoConfig>();
 
         #endregion
 
@@ -40,7 +40,7 @@ namespace BackupAutomaticoCervantes
         public string CaminhoPastaSalvarBackup { get => _caminhoPastaSalvarBackup; set => _caminhoPastaSalvarBackup = value; }
         public Guid Id { get => _id; set => _id = value; }
         public List<HorarioAgendamentoModel> Agendamentos { get => _agendamentos; set => _agendamentos = value; }
-        public List<DestinoConfig> Destinos { get => _destinos; set => _destinos = value; } 
+        public List<IDestinoConfig> Destinos { get => _destinos; set => _destinos = value; } 
 
 
         #endregion
@@ -57,7 +57,7 @@ namespace BackupAutomaticoCervantes
                                    string caminhoPastaParaSalvarBackup,
                                    Guid id,
                                    List<HorarioAgendamentoModel> agendamentos,
-                                   List<DestinoConfig> destinos)
+                                   List<IDestinoConfig> destinos)
         {
             _servidor = servidor;
             _porta = porta;

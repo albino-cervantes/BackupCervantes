@@ -14,18 +14,22 @@ namespace BackupAutomaticoCervantes.DestinoBackup.GoogleDrive
 {
     internal class GoogleDriveBackupDestino : IBackupDestino
     {
-        private readonly Guid _destinoId;
+        private readonly GoogleDriveConfig _config;
 
-        public GoogleDriveBackupDestino(Guid destinoId)
+        /// <summary>
+        /// Inicializa o destino de backup Google Drive com a configuração específica.
+        /// </summary>
+        /// <param name="config">Configuração do Google Drive</param>
+        public GoogleDriveBackupDestino(GoogleDriveConfig config)
         {
-            _destinoId = destinoId;
+            _config = config;
         }
 
         public async Task EnviarBackupAsync(string caminhoArquivoLocal)
         {
             
             // 1) Obtém o DriveService já autenticado (token do usuário)  
-            DriveService service = await GoogleDriveAuthManager.AutenticarAsync(_destinoId);
+            DriveService service = await GoogleDriveAuthManager.AutenticarAsync(_config.Id);
 
             var fileMetadata = new Google.Apis.Drive.v3.Data.File()
             {

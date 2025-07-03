@@ -3,10 +3,6 @@ using BackupAutomaticoCervantes.DestinoBackup.Ftp;
 using BackupAutomaticoCervantes.DestinoBackup.GoogleDrive;
 using BackupAutomaticoCervantes.DestinoBackup.OneDrive;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BackupAutomaticoCervantes.DestinoBackup.Factory
 {
@@ -16,12 +12,22 @@ namespace BackupAutomaticoCervantes.DestinoBackup.Factory
     /// </summary>
     public class BackupDestinoFactory : IBackupDestinoFactory
     {
-        public IBackupDestino CriarDestino(DestinoConfig configuracao)
+        /// <summary>
+        /// Cria uma instância de IBackupDestino baseada na configuração fornecida
+        /// </summary>
+        /// <param name="configuracao">Configuração do destino contendo tipo e parâmetros específicos</param>
+        /// <returns>Instância concreta do destino de backup</returns>
+        /// <exception cref="ArgumentNullException">Quando a configuração é nula</exception>
+        /// <exception cref="NotSupportedException">Quando o tipo de destino não é suportado</exception>
+        /// <exception cref="InvalidOperationException">Quando a configuração específica está ausente</exception>
+        public IBackupDestino CriarDestino(IDestinoConfig configuracao)
         {
+            // Validação de entrada
             if (configuracao == null)
                 throw new ArgumentNullException(nameof(configuracao), "A configuração do destino não pode ser nula");
 
-            // Substituir o switch expression por um switch statement para compatibilidade com C# 7.3
+            // Switch expression para determinar o tipo de destino a ser criado
+            // Cada caso valida a configuração específica e retorna a instância apropriada
             switch (configuracao.Tipo)
             {
                 case DestinoTipo.Ftp:
@@ -33,55 +39,83 @@ namespace BackupAutomaticoCervantes.DestinoBackup.Factory
                 case DestinoTipo.OneDrive:
                     return CriarDestinoOneDrive(configuracao);
                 default:
-                    throw new NotSupportedException($"Tipo de destino '{configuracao.Tipo}' não é suportado");
+                    throw new NotSupportedException($"Tipo de destino '{configuracao.Tipo}' não é suportado.");
             }
         }
 
-        private IBackupDestino CriarDestinoFtp(DestinoConfig configuracao)
+        /// <summary>
+        /// Cria instância específica para destino FTP
+        /// </summary>
+        /// <param name="configuracao">Configuração contendo dados FTP</param>
+        /// <returns>Instância de FtpBackupDestino configurada</returns>
+        private IBackupDestino CriarDestinoFtp(IDestinoConfig configuracao)
         {
-            if (configuracao.Ftp == null)
-                throw new InvalidOperationException("Configuração FTP não pode ser nula para destino do tipo FTP");
+            var ftpConfig = configuracao as FtpConfig
+                ?? throw new InvalidOperationException("Configuração inválida para destino FTP.");
 
-            ValidarCampoObrigatorio(configuracao.Ftp.Url, nameof(configuracao.Ftp.Url));
-            ValidarCampoObrigatorio(configuracao.Ftp.Usuario, nameof(configuracao.Ftp.Usuario));
-            ValidarCampoObrigatorio(configuracao.Ftp.Senha, nameof(configuracao.Ftp.Senha));
+            ValidarCampoObrigatorio(ftpConfig.Url, nameof(ftpConfig.Url));
+            ValidarCampoObrigatorio(ftpConfig.Usuario, nameof(ftpConfig.Usuario));
+            ValidarCampoObrigatorio(ftpConfig.Senha, nameof(ftpConfig.Senha));
 
             return new FtpBackupDestino();
         }
 
-        private IBackupDestino CriarDestinoGoogleDrive(DestinoConfig configuracao)
+        /// <summary>
+        /// Cria instância específica para destino Google Drive
+        /// </summary>
+        /// <param name="configuracao">Configuração contendo dados Google Drive</param>
+        /// <returns>Instância de GoogleDriveBackupDestino configurada</returns>
+        private IBackupDestino CriarDestinoGoogleDrive(IDestinoConfig configuracao)
         {
-            if (configuracao.GoogleDrive == null)
-                throw new InvalidOperationException("Configuração Google Drive não pode ser nula para destino do tipo Google Drive");
+            // Valida se a configuração Google Drive está presente
+            var googleDriveConfig = configuracao as GoogleDriveConfig
+                ?? throw new InvalidOperationException("Configuração inválida para destino Google Drive.");
 
-            return new GoogleDriveBackupDestino(configuracao.Id);
+            // Google Drive precisa do ID do destino para autenticação isolada
+            return new GoogleDriveBackupDestino(googleDriveConfig);
         }
 
-        private IBackupDestino CriarDestinoS3(DestinoConfig configuracao)
+        /// <summary>
+        /// Cria instância específica para destino Amazon S3
+        /// </summary>
+        /// <param name="configuracao">Configuração contendo dados S3</param>
+        /// <returns>Instância de AmazonS3BackupDestino configurada</returns>
+        private IBackupDestino CriarDestinoS3(IDestinoConfig configuracao)
         {
-            if (configuracao.S3 == null)
-                throw new InvalidOperationException("Configuração S3 não pode ser nula para destino do tipo S3");
+            var s3Config = configuracao as S3Config
+                ?? throw new InvalidOperationException("Configuração inválida para destino S3.");
 
-            ValidarCampoObrigatorio(configuracao.S3.AccessKey, nameof(configuracao.S3.AccessKey));
-            ValidarCampoObrigatorio(configuracao.S3.SecretKey, nameof(configuracao.S3.SecretKey));
-            ValidarCampoObrigatorio(configuracao.S3.BucketName, nameof(configuracao.S3.BucketName));
-            ValidarCampoObrigatorio(configuracao.S3.Region, nameof(configuracao.S3.Region));
+            ValidarCampoObrigatorio(s3Config.AccessKey, nameof(s3Config.AccessKey));
+            ValidarCampoObrigatorio(s3Config.SecretKey, nameof(s3Config.SecretKey));
+            ValidarCampoObrigatorio(s3Config.BucketName, nameof(s3Config.BucketName));
+            ValidarCampoObrigatorio(s3Config.Region, nameof(s3Config.Region));
 
             return new AmazonS3BackupDestino();
         }
 
-        private IBackupDestino CriarDestinoOneDrive(DestinoConfig configuracao)
+        /// <summary>
+        /// Cria instância específica para destino OneDrive
+        /// </summary>
+        /// <param name="configuracao">Configuração contendo dados OneDrive</param>
+        /// <returns>Instância de OneDriveBackupDestino configurada</returns>
+        private IBackupDestino CriarDestinoOneDrive(IDestinoConfig configuracao)
         {
-            if (configuracao.OneDrive == null)
-                throw new InvalidOperationException("Configuração OneDrive não pode ser nula para destino do tipo OneDrive");
+            var oneDriveConfig = configuracao as OneDriveConfig
+                ?? throw new InvalidOperationException("Configuração inválida para destino OneDrive.");
 
-            ValidarCampoObrigatorio(configuracao.OneDrive.TenantId, nameof(configuracao.OneDrive.TenantId));
-            ValidarCampoObrigatorio(configuracao.OneDrive.ClientId, nameof(configuracao.OneDrive.ClientId));
-            ValidarCampoObrigatorio(configuracao.OneDrive.ClientSecret, nameof(configuracao.OneDrive.ClientSecret));
+            ValidarCampoObrigatorio(oneDriveConfig.TenantId, nameof(oneDriveConfig.TenantId));
+            ValidarCampoObrigatorio(oneDriveConfig.ClientId, nameof(oneDriveConfig.ClientId));
+            ValidarCampoObrigatorio(oneDriveConfig.ClientSecret, nameof(oneDriveConfig.ClientSecret));
 
             return new OneDriveBackupDestino();
         }
 
+        /// <summary>
+        /// Método auxiliar para validar se um campo obrigatório não está vazio
+        /// </summary>
+        /// <param name="valor">Valor a ser validado</param>
+        /// <param name="nomeCampo">Nome do campo para mensagem de erro</param>
+        /// <exception cref="InvalidOperationException">Quando o campo está vazio ou nulo</exception>
         private static void ValidarCampoObrigatorio(string valor, string nomeCampo)
         {
             if (string.IsNullOrWhiteSpace(valor))

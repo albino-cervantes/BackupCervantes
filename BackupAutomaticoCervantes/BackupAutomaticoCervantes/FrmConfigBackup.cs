@@ -325,13 +325,14 @@ namespace BackupAutomaticoCervantes
 
         private async void dtgLocaisDeDestino_AddNewItem_User(object sender, EventArgs e)
         {
-            var destino = new DestinoConfig();
+            // Cria uma nova configuração específica para Google Drive
+            var googleDriveConfig = new BackupAutomaticoCervantes.DestinoBackup.GoogleDrive.GoogleDriveConfig();
 
-            destino.Tipo = DestinoTipo.GoogleDrive;
+            // Realiza autenticação e associa o Id
+            await GoogleDriveAuthManager.AutenticarAsync(googleDriveConfig.Id);
 
-            await GoogleDriveAuthManager.AutenticarAsync(destino.Id);
-
-            ((ParametrosBackupModel)bdsParametros.Current).Destinos.Add(destino);
+            // Adiciona a configuração diretamente na lista polimórfica
+            ((ParametrosBackupModel)bdsParametros.Current).Destinos.Add(googleDriveConfig);
 
             bdsParametros.ResetBindings(false);
         }

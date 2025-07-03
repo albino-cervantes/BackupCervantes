@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace BackupAutomaticoCervantes.DestinoBackup.OneDrive
 {
-    public class OneDriveConfig
+    public class OneDriveConfig: IDestinoConfig
     {
         public string TenantId { get; set; }
         public string ClientId { get; set; }
         public string ClientSecret { get; set; }
+
+        public Guid Id { get; set; } = Guid.NewGuid();
+
+        public DestinoTipo Tipo => DestinoTipo.OneDrive;
     }
 }

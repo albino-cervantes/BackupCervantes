@@ -110,52 +110,52 @@ namespace BackupAutomaticoCervantes.Services
         /// </summary>
         /// <param name="tipo">Tipo do destino desejado</param>
         /// <returns>Configuração de exemplo para o tipo especificado</returns>
-        public DestinoConfig CriarConfiguracaoExemplo(DestinoTipo tipo)
-        {
-            var config = new DestinoConfig { Tipo = tipo };
+        //public IBackupDestino CriarConfiguracaoExemplo(DestinoTipo tipo)
+        //{
+        //    var config = new BackupDestinoFactory { Tipo = tipo };
 
-            // Cria configurações de exemplo baseadas no tipo
-            // Em um cenário real, essas configurações viriam do usuário/banco de dados
-            switch (tipo)
-            {
-                case DestinoTipo.Ftp:
-                    config.Ftp = new DestinoBackup.Ftp.FtpConfig
-                    {
-                        Url = "ftp://exemplo.com/backup/",
-                        Usuario = "usuario_ftp",
-                        Senha = "senha_ftp"
-                    };
-                    break;
+        //    // Cria configurações de exemplo baseadas no tipo
+        //    // Em um cenário real, essas configurações viriam do usuário/banco de dados
+        //    switch (tipo)
+        //    {
+        //        case DestinoTipo.Ftp:
+        //            config.Ftp = new DestinoBackup.Ftp.FtpConfig()
+        //            {
+        //                Url = "ftp://exemplo.com/backup/",
+        //                Usuario = "usuario_ftp",
+        //                Senha = "senha_ftp"
+        //            };
+        //            break;
 
-                case DestinoTipo.S3:
-                    config.S3 = new DestinoBackup.Amazon.S3Config
-                    {
-                        AccessKey = "SUA_ACCESS_KEY",
-                        SecretKey = "SUA_SECRET_KEY",
-                        BucketName = "meu-bucket-backup",
-                        Region = "us-east-1"
-                    };
-                    break;
+        //        case DestinoTipo.S3:
+        //            config.S3 = new DestinoBackup.Amazon.S3Config
+        //            {
+        //                AccessKey = "SUA_ACCESS_KEY",
+        //                SecretKey = "SUA_SECRET_KEY",
+        //                BucketName = "meu-bucket-backup",
+        //                Region = "us-east-1"
+        //            };
+        //            break;
 
-                case DestinoTipo.GoogleDrive:
-                    config.GoogleDrive = new DestinoBackup.GoogleDrive.GoogleDriveConfig
-                    {
-                        CredenciaisJsonPath = "caminho/para/credenciais.json"
-                    };
-                    break;
+        //        case DestinoTipo.GoogleDrive:
+        //            config.GoogleDrive = new DestinoBackup.GoogleDrive.GoogleDriveConfig
+        //            {
+        //                CredenciaisJsonPath = "caminho/para/credenciais.json"
+        //            };
+        //            break;
 
-                case DestinoTipo.OneDrive:
-                    config.OneDrive = new DestinoBackup.OneDrive.OneDriveConfig
-                    {
-                        TenantId = "seu-tenant-id",
-                        ClientId = "seu-client-id",
-                        ClientSecret = "seu-client-secret"
-                    };
-                    break;
-            }
+        //        case DestinoTipo.OneDrive:
+        //            config.OneDrive = new DestinoBackup.OneDrive.OneDriveConfig
+        //            {
+        //                TenantId = "seu-tenant-id",
+        //                ClientId = "seu-client-id",
+        //                ClientSecret = "seu-client-secret"
+        //            };
+        //            break;
+        //    }
 
-            return config;
-        }
+        //    return config;
+        //}
 
         /// <summary>
         /// Testa se um destino específico está configurado corretamente
@@ -163,7 +163,7 @@ namespace BackupAutomaticoCervantes.Services
         /// </summary>
         /// <param name="config">Configuração do destino a ser testada</param>
         /// <returns>True se a configuração é válida</returns>
-        public async Task<bool> TestarConfiguracaoDestinoAsync(DestinoConfig config)
+        public async Task<bool> TestarConfiguracaoDestinoAsync(IDestinoConfig config)
         {
             try
             {

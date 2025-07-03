@@ -198,7 +198,6 @@
   <ItemGroup>
     <Compile Include="DestinoBackup\Amazon\AmazonS3BackupDestino.cs" />
     <Compile Include="DestinoBackup\Amazon\S3Config.cs" />
-    <Compile Include="DestinoBackup\DestinoConfig.cs" />
     <Compile Include="DestinoBackup\DestinoTipo.cs" />
     <Compile Include="DestinoBackup\Factory\BackupDestinoFactory.cs" />
     <Compile Include="DestinoBackup\Factory\IBackupDestinoFactory.cs" />
@@ -214,6 +213,7 @@
     <Compile Include="DestinoBackup\GoogleDrive\GoogleDriveBackupDestino.cs" />
     <Compile Include="DestinoBackup\GoogleDrive\GoogleDriveConfig.cs" />
     <Compile Include="DestinoBackup\IBackupDestino.cs" />
+    <Compile Include="DestinoBackup\IDestinoConfig.cs" />
     <Compile Include="DestinoBackup\OneDrive\OneDriveBackupDestino.cs" />
     <Compile Include="DestinoBackup\OneDrive\OneDriveConfig.cs" />
     <Compile Include="FrmADM.cs">

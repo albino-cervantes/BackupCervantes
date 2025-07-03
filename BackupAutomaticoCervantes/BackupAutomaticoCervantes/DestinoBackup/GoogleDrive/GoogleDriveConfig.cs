@@ -6,8 +6,15 @@ using System.Threading.Tasks;
 
 namespace BackupAutomaticoCervantes.DestinoBackup.GoogleDrive
 {
-    public class GoogleDriveConfig
+    /// <summary>
+    /// Configuração específica para backup no Google Drive.
+    /// </summary>
+    public class GoogleDriveConfig : IDestinoConfig
     {
         public string CredenciaisJsonPath { get; set; }
+
+        public Guid Id { get; set; } = Guid.NewGuid();
+
+        public DestinoTipo Tipo => DestinoTipo.GoogleDrive;
     }
 }

@@ -2,3 +2,10 @@
 /BackupAutomaticoCervantes/BackupAutomaticoCervantes/bin
 /BackupAutomaticoCervantes/BackupAutomaticoCervantes/obj
 /BackupAutomaticoCervantes/BackupAutomaticoCervantes/Properties
+/BackupAutomaticoCervantes/.vs
+/BackupAutomaticoCervantes/.vs/*.*
+*.db
+*.json
+*.exe
+/BackupAutomaticoCervantes/BackupAutomaticoCervantes/bin/*.*
+/BackupAutomaticoCervantes/BackupAutomaticoCervantes/obj

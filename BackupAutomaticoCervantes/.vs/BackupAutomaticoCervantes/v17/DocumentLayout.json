@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|c:\\users\\robson\\documents\\github\\backupcervantes\\backupautomaticocervantes\\backupautomaticocervantes\\frmconfigbackup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\backupautomaticocervantes\\destinobackup\\destinotipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|solutionrelative:backupautomaticocervantes\\destinobackup\\destinotipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\backupautomaticocervantes\\models\\parametrosbackupmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|solutionrelative:backupautomaticocervantes\\models\\parametrosbackupmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\backupautomaticocervantes\\destinobackup\\googledrive\\googledrivebackupdestino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|solutionrelative:backupautomaticocervantes\\destinobackup\\googledrive\\googledrivebackupdestino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\backupautomaticocervantes\\frmconfigbackup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|solutionrelative:backupautomaticocervantes\\frmconfigbackup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\backupautomaticocervantes\\destinobackup\\googledrive\\googledriveconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|solutionrelative:backupautomaticocervantes\\destinobackup\\googledrive\\googledriveconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|c:\\users\\robson\\documents\\github\\backupcervantes\\backupautomaticocervantes\\backupautomaticocervantes\\frmlistabackups.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|solutionrelative:backupautomaticocervantes\\frmlistabackups.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|c:\\users\\robson\\documents\\github\\backupcervantes\\backupautomaticocervantes\\backupautomaticocervantes\\services\\backupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,32 +35,28 @@
       "RelativeMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|solutionrelative:backupautomaticocervantes\\services\\resultadoenviobackup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\backupautomaticocervantes\\padrao\\clsstatica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|solutionrelative:backupautomaticocervantes\\padrao\\clsstatica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\backupautomaticocervantes\\destinobackup\\amazon\\amazons3backupdestino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|solutionrelative:backupautomaticocervantes\\destinobackup\\amazon\\amazons3backupdestino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\backupautomaticocervantes\\destinobackup\\ftp\\ftpbackupdestino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|solutionrelative:backupautomaticocervantes\\destinobackup\\ftp\\ftpbackupdestino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\backupautomaticocervantes\\destinobackup\\destinoconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|solutionrelative:backupautomaticocervantes\\destinobackup\\destinoconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\backupautomaticocervantes\\services\\parametrosbackupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|solutionrelative:backupautomaticocervantes\\services\\parametrosbackupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\backupautomaticocervantes\\destinobackup\\factory\\backupdestinofactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|solutionrelative:backupautomaticocervantes\\destinobackup\\factory\\backupdestinofactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\backupautomaticocervantes\\destinobackup\\amazon\\s3config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|solutionrelative:backupautomaticocervantes\\destinobackup\\amazon\\s3config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\backupautomaticocervantes\\destinobackup\\factory\\ibackupdestinofactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|solutionrelative:backupautomaticocervantes\\destinobackup\\factory\\ibackupdestinofactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\backupautomaticocervantes\\destinobackup\\googledrive\\googledriveauthmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|solutionrelative:backupautomaticocervantes\\destinobackup\\googledrive\\googledriveauthmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\backupautomaticocervantes\\destinobackup\\idestinoconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|solutionrelative:backupautomaticocervantes\\destinobackup\\idestinoconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\backupautomaticocervantes\\destinobackup\\ibackupdestino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6560D8ED-1E95-42C1-8B42-9A0AC8080CDC}|BackupAutomaticoCervantes\\BackupAutomaticoCervantes.csproj|solutionrelative:backupautomaticocervantes\\destinobackup\\ibackupdestino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,93 +82,119 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmConfigBackup.cs",
-              "DocumentMoniker": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\FrmConfigBackup.cs",
-              "RelativeDocumentMoniker": "BackupAutomaticoCervantes\\FrmConfigBackup.cs",
-              "ToolTip": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\FrmConfigBackup.cs",
-              "RelativeToolTip": "BackupAutomaticoCervantes\\FrmConfigBackup.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwEoBAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "FrmListaBackups.cs",
+              "DocumentMoniker": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\FrmListaBackups.cs",
+              "RelativeDocumentMoniker": "BackupAutomaticoCervantes\\FrmListaBackups.cs",
+              "ToolTip": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\FrmListaBackups.cs",
+              "RelativeToolTip": "BackupAutomaticoCervantes\\FrmListaBackups.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAWwB4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T12:47:04.964Z",
+              "WhenOpened": "2025-07-03T11:56:00.778Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ClsStatica.cs",
-              "DocumentMoniker": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\Padrao\\ClsStatica.cs",
-              "RelativeDocumentMoniker": "BackupAutomaticoCervantes\\Padrao\\ClsStatica.cs",
-              "ToolTip": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\Padrao\\ClsStatica.cs",
-              "RelativeToolTip": "BackupAutomaticoCervantes\\Padrao\\ClsStatica.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ParametrosBackupModel.cs",
+              "DocumentMoniker": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\Models\\ParametrosBackupModel.cs",
+              "RelativeDocumentMoniker": "BackupAutomaticoCervantes\\Models\\ParametrosBackupModel.cs",
+              "ToolTip": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\Models\\ParametrosBackupModel.cs",
+              "RelativeToolTip": "BackupAutomaticoCervantes\\Models\\ParametrosBackupModel.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwAsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T18:46:40.662Z"
+              "WhenOpened": "2025-07-02T18:17:10.946Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "ResultadoEnvioBackup.cs",
               "DocumentMoniker": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\Services\\ResultadoEnvioBackup.cs",
               "RelativeDocumentMoniker": "BackupAutomaticoCervantes\\Services\\ResultadoEnvioBackup.cs",
               "ToolTip": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\Services\\ResultadoEnvioBackup.cs",
               "RelativeToolTip": "BackupAutomaticoCervantes\\Services\\ResultadoEnvioBackup.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAwwBUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T15:08:28.261Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BackupService.cs",
-              "DocumentMoniker": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\Services\\BackupService.cs",
-              "RelativeDocumentMoniker": "BackupAutomaticoCervantes\\Services\\BackupService.cs",
-              "ToolTip": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\Services\\BackupService.cs",
-              "RelativeToolTip": "BackupAutomaticoCervantes\\Services\\BackupService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T15:05:36.534Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FtpBackupDestino.cs",
-              "DocumentMoniker": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\DestinoBackup\\Ftp\\FtpBackupDestino.cs",
-              "RelativeDocumentMoniker": "BackupAutomaticoCervantes\\DestinoBackup\\Ftp\\FtpBackupDestino.cs",
-              "ToolTip": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\DestinoBackup\\Ftp\\FtpBackupDestino.cs",
-              "RelativeToolTip": "BackupAutomaticoCervantes\\DestinoBackup\\Ftp\\FtpBackupDestino.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T13:43:34.402Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DestinoConfig.cs",
-              "DocumentMoniker": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\DestinoBackup\\DestinoConfig.cs",
-              "RelativeDocumentMoniker": "BackupAutomaticoCervantes\\DestinoBackup\\DestinoConfig.cs",
-              "ToolTip": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\DestinoBackup\\DestinoConfig.cs",
-              "RelativeToolTip": "BackupAutomaticoCervantes\\DestinoBackup\\DestinoConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T13:38:53.019Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BackupDestinoFactory.cs",
-              "DocumentMoniker": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\DestinoBackup\\Factory\\BackupDestinoFactory.cs",
-              "RelativeDocumentMoniker": "BackupAutomaticoCervantes\\DestinoBackup\\Factory\\BackupDestinoFactory.cs",
-              "ToolTip": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\DestinoBackup\\Factory\\BackupDestinoFactory.cs",
-              "RelativeToolTip": "BackupAutomaticoCervantes\\DestinoBackup\\Factory\\BackupDestinoFactory.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAABIAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T13:21:48.592Z"
+              "WhenOpened": "2025-07-02T18:17:03.546Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "ParametrosBackupService.cs",
+              "DocumentMoniker": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\Services\\ParametrosBackupService.cs",
+              "RelativeDocumentMoniker": "BackupAutomaticoCervantes\\Services\\ParametrosBackupService.cs",
+              "ToolTip": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\Services\\ParametrosBackupService.cs",
+              "RelativeToolTip": "BackupAutomaticoCervantes\\Services\\ParametrosBackupService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T18:17:01.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "S3Config.cs",
+              "DocumentMoniker": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\DestinoBackup\\Amazon\\S3Config.cs",
+              "RelativeDocumentMoniker": "BackupAutomaticoCervantes\\DestinoBackup\\Amazon\\S3Config.cs",
+              "ToolTip": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\DestinoBackup\\Amazon\\S3Config.cs",
+              "RelativeToolTip": "BackupAutomaticoCervantes\\DestinoBackup\\Amazon\\S3Config.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T18:11:03.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DestinoTipo.cs",
+              "DocumentMoniker": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\DestinoBackup\\DestinoTipo.cs",
+              "RelativeDocumentMoniker": "BackupAutomaticoCervantes\\DestinoBackup\\DestinoTipo.cs",
+              "ToolTip": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\DestinoBackup\\DestinoTipo.cs",
+              "RelativeToolTip": "BackupAutomaticoCervantes\\DestinoBackup\\DestinoTipo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T18:07:07.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GoogleDriveConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\DestinoBackup\\GoogleDrive\\GoogleDriveConfig.cs",
+              "RelativeDocumentMoniker": "BackupAutomaticoCervantes\\DestinoBackup\\GoogleDrive\\GoogleDriveConfig.cs",
+              "ToolTip": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\DestinoBackup\\GoogleDrive\\GoogleDriveConfig.cs",
+              "RelativeToolTip": "BackupAutomaticoCervantes\\DestinoBackup\\GoogleDrive\\GoogleDriveConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T17:56:11.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IBackupDestino.cs",
+              "DocumentMoniker": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\DestinoBackup\\IBackupDestino.cs",
+              "RelativeDocumentMoniker": "BackupAutomaticoCervantes\\DestinoBackup\\IBackupDestino.cs",
+              "ToolTip": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\DestinoBackup\\IBackupDestino.cs",
+              "RelativeToolTip": "BackupAutomaticoCervantes\\DestinoBackup\\IBackupDestino.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T16:31:00.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IDestinoConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\DestinoBackup\\IDestinoConfig.cs",
+              "RelativeDocumentMoniker": "BackupAutomaticoCervantes\\DestinoBackup\\IDestinoConfig.cs",
+              "ToolTip": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\DestinoBackup\\IDestinoConfig.cs",
+              "RelativeToolTip": "BackupAutomaticoCervantes\\DestinoBackup\\IDestinoConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T16:30:56.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "IBackupDestinoFactory.cs",
               "DocumentMoniker": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\DestinoBackup\\Factory\\IBackupDestinoFactory.cs",
               "RelativeDocumentMoniker": "BackupAutomaticoCervantes\\DestinoBackup\\Factory\\IBackupDestinoFactory.cs",
@@ -160,31 +202,58 @@
               "RelativeToolTip": "BackupAutomaticoCervantes\\DestinoBackup\\Factory\\IBackupDestinoFactory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T13:13:02.115Z"
+              "WhenOpened": "2025-07-02T16:30:33.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BackupService.cs",
+              "DocumentMoniker": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\Services\\BackupService.cs",
+              "RelativeDocumentMoniker": "BackupAutomaticoCervantes\\Services\\BackupService.cs",
+              "ToolTip": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\Services\\BackupService.cs",
+              "RelativeToolTip": "BackupAutomaticoCervantes\\Services\\BackupService.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAkwJ0AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T16:12:02.164Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "GoogleDriveAuthManager.cs",
-              "DocumentMoniker": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\DestinoBackup\\GoogleDrive\\GoogleDriveAuthManager.cs",
-              "RelativeDocumentMoniker": "BackupAutomaticoCervantes\\DestinoBackup\\GoogleDrive\\GoogleDriveAuthManager.cs",
-              "ToolTip": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\DestinoBackup\\GoogleDrive\\GoogleDriveAuthManager.cs",
-              "RelativeToolTip": "BackupAutomaticoCervantes\\DestinoBackup\\GoogleDrive\\GoogleDriveAuthManager.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAABNAAAAAAAAAA==",
+              "Title": "BackupDestinoFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\DestinoBackup\\Factory\\BackupDestinoFactory.cs",
+              "RelativeDocumentMoniker": "BackupAutomaticoCervantes\\DestinoBackup\\Factory\\BackupDestinoFactory.cs",
+              "ToolTip": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\DestinoBackup\\Factory\\BackupDestinoFactory.cs",
+              "RelativeToolTip": "BackupAutomaticoCervantes\\DestinoBackup\\Factory\\BackupDestinoFactory.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwDIAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T12:54:55.174Z"
+              "WhenOpened": "2025-07-02T16:07:42.048Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AmazonS3BackupDestino.cs",
-              "DocumentMoniker": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\DestinoBackup\\Amazon\\AmazonS3BackupDestino.cs",
-              "RelativeDocumentMoniker": "BackupAutomaticoCervantes\\DestinoBackup\\Amazon\\AmazonS3BackupDestino.cs",
-              "ToolTip": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\DestinoBackup\\Amazon\\AmazonS3BackupDestino.cs",
-              "RelativeToolTip": "BackupAutomaticoCervantes\\DestinoBackup\\Amazon\\AmazonS3BackupDestino.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAuwA8AAAAsAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "GoogleDriveBackupDestino.cs",
+              "DocumentMoniker": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\DestinoBackup\\GoogleDrive\\GoogleDriveBackupDestino.cs",
+              "RelativeDocumentMoniker": "BackupAutomaticoCervantes\\DestinoBackup\\GoogleDrive\\GoogleDriveBackupDestino.cs",
+              "ToolTip": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\DestinoBackup\\GoogleDrive\\GoogleDriveBackupDestino.cs",
+              "RelativeToolTip": "BackupAutomaticoCervantes\\DestinoBackup\\GoogleDrive\\GoogleDriveBackupDestino.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAswB8AAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T12:53:21.563Z"
+              "WhenOpened": "2025-07-02T16:07:22.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmConfigBackup.cs",
+              "DocumentMoniker": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\FrmConfigBackup.cs",
+              "RelativeDocumentMoniker": "BackupAutomaticoCervantes\\FrmConfigBackup.cs",
+              "ToolTip": "C:\\Users\\Robson\\Documents\\GitHub\\BackupCervantes\\BackupAutomaticoCervantes\\BackupAutomaticoCervantes\\FrmConfigBackup.cs",
+              "RelativeToolTip": "BackupAutomaticoCervantes\\FrmConfigBackup.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAEwEsBAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T15:05:02.071Z",
+              "EditorCaption": ""
             }
           ]
         }
