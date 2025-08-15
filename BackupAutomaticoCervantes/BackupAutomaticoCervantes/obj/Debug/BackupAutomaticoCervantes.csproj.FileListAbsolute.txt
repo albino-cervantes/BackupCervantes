@@ -135,3 +135,5 @@ C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\Backu
 C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\obj\Debug\BackupAu.6552F128.Up2Date
 C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\obj\Debug\BackupAutomaticoCervantes.exe
 C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\obj\Debug\BackupAutomaticoCervantes.pdb
+C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\System.Windows.Forms.Calendar.dll
+C:\Users\Robson\Documents\GitHub\BackupCervantes\BackupAutomaticoCervantes\BackupAutomaticoCervantes\bin\Debug\System.Windows.Forms.Ribbon.dll

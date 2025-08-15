@@ -1,10 +1,10 @@
-﻿using BackupAutomaticoCervantes.repositorios;
-using RognusFramework;
+﻿using BackupAutomaticoCervantes.Padrao;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,32 +12,48 @@ using System.Windows.Forms;
 
 namespace BackupAutomaticoCervantes
 {
-    public partial class FrmADM : FrmDefault
+    public partial class FrmADM : RibbonForm
     {
-        private readonly AppConfigRepositorio _repo;
 
         public FrmADM()
         {
             InitializeComponent();
-
-            _repo = new AppConfigRepositorio();
-
-            bdsParametrosBackups.DataSource = _repo.GetAll();
         }
 
-        private void dtgListaParametrosBackups_AddNewItem_User(object sender, EventArgs e)
+        private void rbbConfigParametros_Click(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
 
+            try
+            {
+                var frm = new FrmConfigBackup();
+                frm.MdiParent = this;
+                frm.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            Cursor.Current = Cursors.Default;
         }
 
-        private void dtgListaParametrosBackups_UpdateItem_User(object sender, EventArgs e)
+        private void ribbonButton2_Click(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
 
-        }
+            try
+            {
+                ClsStatica.CriarServico("BackupAutomaticoCervantes", "Backup Automático Cervantes",
+                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "BackupWindowsService.exe"));
+            }
 
-        private void dtgListaParametrosBackups_RowRemoving_User(object sender, DataGridViewRowCancelEventArgs e)
-        {
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
 
+            Cursor.Current = Cursors.Default;
         }
     }
 }

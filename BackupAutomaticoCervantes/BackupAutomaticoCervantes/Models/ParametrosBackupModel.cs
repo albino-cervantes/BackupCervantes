@@ -1,5 +1,6 @@
 ﻿using BackupAutomaticoCervantes.DestinoBackup;
 using BackupAutomaticoCervantes.Models;
+using Newtonsoft.Json;
 using RognusFramework;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,8 @@ namespace BackupAutomaticoCervantes
         private string _caminhoPastaSalvarBackup;
         private string _caminhoPgDump;
         private List<HorarioAgendamentoModel> _agendamentos = new List<HorarioAgendamentoModel>();
+        
+        
         private List<IDestinoConfig> _destinos = new List<IDestinoConfig>();
 
         #endregion

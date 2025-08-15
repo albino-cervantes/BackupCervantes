@@ -55,6 +55,8 @@
             this.ofdCaminhoPgDump = new System.Windows.Forms.OpenFileDialog();
             this.groupBoxDefault1 = new RognusFramework.Componentes.GroupBoxDefault();
             this.dtgAgendamentos = new RognusFramework.Componentes.DataGridViewChange();
+            this.Hora = new RognusFramework.Componentes.DataGridViewTextBoxColumnDefault();
+            this.DiasDaSemanaDisplay = new RognusFramework.Componentes.DataGridViewTextBoxColumnDefault();
             this.bdsAgendamento = new RognusFramework.Componentes.BindingSourceDefault(this.components);
             this.us = new RognusFramework.Componentes.UserControlInAltDel();
             this.groupBoxDefault2 = new RognusFramework.Componentes.GroupBoxDefault();
@@ -66,8 +68,12 @@
             this.tvListaTabelas = new BackupAutomaticoCervantes.Padrao.TreeviewListaTabelasBancoDadosPostgres();
             this.userControlInAltDel2 = new RognusFramework.Componentes.UserControlInAltDel();
             this.frmListaBackups1 = new BackupAutomaticoCervantes.FrmListaBackups();
-            this.Hora = new RognusFramework.Componentes.DataGridViewTextBoxColumnDefault();
-            this.DiasDaSemanaDisplay = new RognusFramework.Componentes.DataGridViewTextBoxColumnDefault();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.horaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.executarTodosOsDiasDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.diasDaSemanaDisplayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.executouHojeDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dataUltimaExecucaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderDefault)).BeginInit();
             this.gbxPropriedadesConexao.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bdsParametros)).BeginInit();
@@ -389,7 +395,13 @@
             this.dtgAgendamentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgAgendamentos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Hora,
-            this.DiasDaSemanaDisplay});
+            this.DiasDaSemanaDisplay,
+            this.idDataGridViewTextBoxColumn,
+            this.horaDataGridViewTextBoxColumn,
+            this.executarTodosOsDiasDataGridViewCheckBoxColumn,
+            this.diasDaSemanaDisplayDataGridViewTextBoxColumn,
+            this.executouHojeDataGridViewCheckBoxColumn,
+            this.dataUltimaExecucaoDataGridViewTextBoxColumn});
             this.dtgAgendamentos.CurrentBackColorEdit_User = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(213)))), ((int)(((byte)(179)))));
             this.dtgAgendamentos.CurrentBackColorNotEdit_User = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(225)))), ((int)(((byte)(240)))));
             this.dtgAgendamentos.DataSource = this.bdsAgendamento;
@@ -417,6 +429,23 @@
             this.dtgAgendamentos.AddNewItem_User += new System.EventHandler(this.dtgAgendamentos_AddNewItem_User);
             this.dtgAgendamentos.UpdateItem_User += new System.EventHandler(this.dtgAgendamentos_UpdateItem_User);
             this.dtgAgendamentos.RowRemoving_User += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.dtgAgendamentos_RowRemoving_User);
+            // 
+            // Hora
+            // 
+            this.Hora.DataPropertyName = "Hora";
+            this.Hora.ExportarParaExcel = true;
+            this.Hora.HeaderText = "Hora";
+            this.Hora.Name = "Hora";
+            this.Hora.ReadOnly = true;
+            // 
+            // DiasDaSemanaDisplay
+            // 
+            this.DiasDaSemanaDisplay.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.DiasDaSemanaDisplay.DataPropertyName = "DiasDaSemanaDisplay";
+            this.DiasDaSemanaDisplay.ExportarParaExcel = true;
+            this.DiasDaSemanaDisplay.HeaderText = "DiasDaSemanaDisplay";
+            this.DiasDaSemanaDisplay.Name = "DiasDaSemanaDisplay";
+            this.DiasDaSemanaDisplay.ReadOnly = true;
             // 
             // bdsAgendamento
             // 
@@ -579,25 +608,51 @@
             this.frmListaBackups1.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.frmListaBackups1.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.frmListaBackups1.Text = "Busca Parametros ";
+            this.frmListaBackups1.TopMost = true;
             this.frmListaBackups1.Visible = false;
             this.frmListaBackups1.btnInAltClick_user += new System.EventHandler(this.frmListaBackups1_btnInAltClick_user);
             // 
-            // Hora
+            // idDataGridViewTextBoxColumn
             // 
-            this.Hora.DataPropertyName = "Hora";
-            this.Hora.ExportarParaExcel = true;
-            this.Hora.HeaderText = "Hora";
-            this.Hora.Name = "Hora";
-            this.Hora.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // DiasDaSemanaDisplay
+            // horaDataGridViewTextBoxColumn
             // 
-            this.DiasDaSemanaDisplay.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.DiasDaSemanaDisplay.DataPropertyName = "DiasDaSemanaDisplay";
-            this.DiasDaSemanaDisplay.ExportarParaExcel = true;
-            this.DiasDaSemanaDisplay.HeaderText = "DiasDaSemanaDisplay";
-            this.DiasDaSemanaDisplay.Name = "DiasDaSemanaDisplay";
-            this.DiasDaSemanaDisplay.ReadOnly = true;
+            this.horaDataGridViewTextBoxColumn.DataPropertyName = "Hora";
+            this.horaDataGridViewTextBoxColumn.HeaderText = "Hora";
+            this.horaDataGridViewTextBoxColumn.Name = "horaDataGridViewTextBoxColumn";
+            this.horaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // executarTodosOsDiasDataGridViewCheckBoxColumn
+            // 
+            this.executarTodosOsDiasDataGridViewCheckBoxColumn.DataPropertyName = "ExecutarTodosOsDias";
+            this.executarTodosOsDiasDataGridViewCheckBoxColumn.HeaderText = "ExecutarTodosOsDias";
+            this.executarTodosOsDiasDataGridViewCheckBoxColumn.Name = "executarTodosOsDiasDataGridViewCheckBoxColumn";
+            this.executarTodosOsDiasDataGridViewCheckBoxColumn.ReadOnly = true;
+            // 
+            // diasDaSemanaDisplayDataGridViewTextBoxColumn
+            // 
+            this.diasDaSemanaDisplayDataGridViewTextBoxColumn.DataPropertyName = "DiasDaSemanaDisplay";
+            this.diasDaSemanaDisplayDataGridViewTextBoxColumn.HeaderText = "DiasDaSemanaDisplay";
+            this.diasDaSemanaDisplayDataGridViewTextBoxColumn.Name = "diasDaSemanaDisplayDataGridViewTextBoxColumn";
+            this.diasDaSemanaDisplayDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // executouHojeDataGridViewCheckBoxColumn
+            // 
+            this.executouHojeDataGridViewCheckBoxColumn.DataPropertyName = "ExecutouHoje";
+            this.executouHojeDataGridViewCheckBoxColumn.HeaderText = "ExecutouHoje";
+            this.executouHojeDataGridViewCheckBoxColumn.Name = "executouHojeDataGridViewCheckBoxColumn";
+            this.executouHojeDataGridViewCheckBoxColumn.ReadOnly = true;
+            // 
+            // dataUltimaExecucaoDataGridViewTextBoxColumn
+            // 
+            this.dataUltimaExecucaoDataGridViewTextBoxColumn.DataPropertyName = "DataUltimaExecucao";
+            this.dataUltimaExecucaoDataGridViewTextBoxColumn.HeaderText = "DataUltimaExecucao";
+            this.dataUltimaExecucaoDataGridViewTextBoxColumn.Name = "dataUltimaExecucaoDataGridViewTextBoxColumn";
+            this.dataUltimaExecucaoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // FrmConfigBackup
             // 
@@ -615,6 +670,7 @@
             this.Name = "FrmConfigBackup";
             this.ShowInTaskbar = true;
             this.Text = "Parametros de Backup";
+            this.TopMost = true;
             this.Controls.SetChildIndex(this.pnlDefault, 0);
             this.Controls.SetChildIndex(this.gbxPropriedadesConexao, 0);
             this.Controls.SetChildIndex(this.groupBoxDefault1, 0);
@@ -674,5 +730,11 @@
         private RognusFramework.Componentes.ButtonDefault btnCarregarListaTabelas;
         private RognusFramework.Componentes.DataGridViewTextBoxColumnDefault Hora;
         private RognusFramework.Componentes.DataGridViewTextBoxColumnDefault DiasDaSemanaDisplay;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn horaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn executarTodosOsDiasDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diasDaSemanaDisplayDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn executouHojeDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataUltimaExecucaoDataGridViewTextBoxColumn;
     }
 }

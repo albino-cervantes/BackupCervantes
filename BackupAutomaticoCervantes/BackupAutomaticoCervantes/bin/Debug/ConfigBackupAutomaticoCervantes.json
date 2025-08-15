@@ -12,19 +12,10 @@
       "NomeArquivoDeBackup": null,
       "CaminhoPgDump": "C:\\postgreSQL\\9.5\\bin\\pg_dump.exe",
       "CaminhoPastaSalvarBackup": "C:\\Cervantes",
-      "Id": "c8a5f07b-8f9a-4e7d-a70c-449b8a0ca574",
+      "Id": "b661a8db-0446-4101-bd63-de04a6d991a4",
       "Agendamentos": [
         {
-          "Id": "c8526646-3a80-4891-9d55-62e443dd2467",
-          "Hora": "13:00:00",
-          "DiasDaSemana": [
-            0
-          ],
-          "ExecutarTodosOsDias": false,
-          "DiasDaSemanaDisplay": "Domingo às 13:00"
-        },
-        {
-          "Id": "770395bb-a139-49db-af48-d41510b4ccd6",
+          "Id": "cbe02842-3645-41b6-a3e4-06b268014dad",
           "Hora": "00:00:00",
           "DiasDaSemana": [],
           "ExecutarTodosOsDias": true,
@@ -34,7 +25,7 @@
       "Destinos": [
         {
           "CredenciaisJsonPath": null,
-          "Id": "4ed9e4a0-2b27-4756-ae4e-a2ce3f10bf15",
+          "Id": "c0445f1a-cc31-478b-a604-29bf720485ed",
           "Tipo": 1
         }
       ]

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BackupAutomaticoCervantes.repositorios
 {
-    internal class AppConfigRepositorio
+    public class AppConfigRepositorio
     {
         private readonly ConfigManager _cfg = ConfigManager.Instance;
 
