@@ -10,6 +10,8 @@ namespace PostgresImageMigration
         {
             Logger.Initialize(); // inicializa arquivo de log
             Logger.Log("=== Iniciando aplicação de migração de imagens ===");
+			
+			Analisar para adicionar a extensão do arquivo junto ao registro na tabela fotos_a_migrar
 
             // Cria e executa o serviço de migração (o serviço faz todo o pipeline)
             try
